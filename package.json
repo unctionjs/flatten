@@ -1,7 +1,7 @@
 {
-  "name": "@unction/{{FQNAME}}",
+  "name": "@unction/flatten",
   "version": "1.0.0",
-  "description": "",
+  "description": "Takes a multi-dimensional functor and decreases the nesting by one",
   "keywords": [
     "unction",
     "functional"
@@ -14,9 +14,9 @@
     }
   ],
   "license": "ISC",
-  "homepage": "https://github.com/unctionjs/{{NAME}}#readme",
-  "repository": "github:unctionjs/{{NAME}}",
-  "bugs": "https://github.com/unctionjs/{{NAME}}/issues",
+  "homepage": "https://github.com/unctionjs/flatten#readme",
+  "repository": "github:unctionjs/flatten",
+  "bugs": "https://github.com/unctionjs/flatten/issues",
   "main": "transpiled/index.js",
   "files": [
     "transpiled/index.js"
@@ -38,6 +38,7 @@
     "watch": "chokidar './index.js' './test.js' --command 'npm run ci --silent'"
   },
   "devDependencies": {
+    "@unction/streamsatisfies": "4.2.0",
     "babel-cli": "6.26.0",
     "babel-core": "6.26.0",
     "babel-eslint": "8.0.3",
@@ -58,7 +59,19 @@
     "flow-bin": "0.61.0",
     "flow-typed": "2.2.3",
     "nyc": "11.3.0",
-    "tap": "11.0.0"
+    "tap": "11.0.0",
+    "xstream": "11.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@unction/attach": "3.14.1",
+    "@unction/fresh": "4.0.0",
+    "@unction/ifthenelse": "2.8.0",
+    "@unction/isenumerable": "1.0.0",
+    "@unction/istype": "2.12.0",
+    "@unction/itself": "2.8.0",
+    "@unction/mergeright": "3.36.2",
+    "@unction/reducevalues": "2.44.0",
+    "@unction/reducewithvaluekey": "5.0.0",
+    "@unction/type": "2.8.0"
+  }
 }
