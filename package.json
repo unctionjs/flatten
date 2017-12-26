@@ -63,13 +63,13 @@
     "xstream": "11.1.0"
   },
   "dependencies": {
-    "@unction/attach": "3.14.1",
-    "@unction/fresh": "4.0.0",
+    "@unction/attach": "4.0.0",
+    "@unction/fresh": "5.0.0",
     "@unction/ifthenelse": "2.8.0",
     "@unction/isenumerable": "1.0.0",
     "@unction/istype": "2.12.0",
     "@unction/itself": "2.8.0",
-    "@unction/mergeright": "3.36.2",
+    "@unction/mergeright": "4.0.0",
     "@unction/reducevalues": "2.44.0",
     "@unction/reducewithvaluekey": "5.0.0",
     "@unction/type": "2.8.0"
