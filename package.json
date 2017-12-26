@@ -65,13 +65,13 @@
   "dependencies": {
     "@unction/attach": "4.0.0",
     "@unction/fresh": "5.0.0",
-    "@unction/ifthenelse": "2.8.0",
+    "@unction/ifthenelse": "3.0.0",
     "@unction/isenumerable": "1.0.0",
-    "@unction/istype": "2.12.0",
-    "@unction/itself": "2.8.0",
+    "@unction/istype": "3.0.0",
+    "@unction/itself": "3.0.0",
     "@unction/mergeright": "4.0.0",
-    "@unction/reducevalues": "2.44.0",
-    "@unction/reducewithvaluekey": "5.0.0",
-    "@unction/type": "2.8.0"
+    "@unction/reducevalues": "3.0.0",
+    "@unction/reducewithvaluekey": "6.0.0",
+    "@unction/type": "3.0.0"
   }
 }
