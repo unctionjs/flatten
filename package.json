@@ -63,15 +63,15 @@
     "xstream": "11.1.0"
   },
   "dependencies": {
-    "@unction/attach": "4.0.0",
-    "@unction/fresh": "5.0.0",
+    "@unction/attach": "5.0.0",
+    "@unction/fresh": "6.0.0",
     "@unction/ifthenelse": "3.0.0",
-    "@unction/isenumerable": "1.0.0",
-    "@unction/istype": "3.0.0",
+    "@unction/isenumerable": "2.0.0",
+    "@unction/istype": "4.0.0",
     "@unction/itself": "3.0.0",
-    "@unction/mergeright": "4.0.0",
-    "@unction/reducevalues": "3.0.0",
-    "@unction/reducewithvaluekey": "6.0.0",
+    "@unction/mergeright": "5.0.0",
+    "@unction/reducevalues": "4.0.0",
+    "@unction/reducewithvaluekey": "7.0.0",
     "@unction/type": "3.0.0"
   }
 }
