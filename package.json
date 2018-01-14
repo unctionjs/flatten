@@ -70,7 +70,7 @@
     "@unction/istype": "4.0.0",
     "@unction/itself": "3.0.0",
     "@unction/mergeright": "5.0.0",
-    "@unction/reducevalues": "5.0.0",
+    "@unction/reducevalues": "6.0.0",
     "@unction/reducewithvaluekey": "8.0.0",
     "@unction/type": "3.0.0"
   }
