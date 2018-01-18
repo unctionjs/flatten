@@ -1,6 +1,6 @@
 /* eslint-disable flowtype/require-parameter-type, flowtype/require-return-type */
 import {test} from "tap"
-import xstream from "xstream"
+import {from} from "most"
 import streamSatisfies from "@unction/streamsatisfies"
 
 import flatten from "./index"
@@ -41,9 +41,9 @@ test("Stream", ({equal, doesNotThrow, end}) => {
     }
   )(
     flatten(
-      xstream.from([
-        xstream.from(["a", "b"]),
-        xstream.from(["c", "d"]),
+      from([
+        from(["a", "b"]),
+        from(["c", "d"]),
       ])
     )
   )

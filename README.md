@@ -9,12 +9,14 @@
 Takes a multi-dimensional functor and decreases the nesting by one.
 
 ``` javascript
+import {from} from "most"
+
 flatten([["a", "b"], ["c", "d"]]) // ["a", "b", "c", "d"]
 flatten(["a", "b", ["c", "d"]]) // ["a", "b", "c", "d"]
 flatten(
-  xstream.from([
-    xstream.from(["a", "b"]),
-    xstream.from(["c", "d"]),
+  from([
+    from(["a", "b"]),
+    from(["c", "d"]),
   ])
 ) // ---a---b---c---d---|
 ```
