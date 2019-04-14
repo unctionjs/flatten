@@ -17,7 +17,7 @@
   "homepage": "https://github.com/unctionjs/flatten#readme",
   "repository": "github:unctionjs/flatten",
   "bugs": "https://github.com/unctionjs/flatten/issues",
-  "main": "transpiled/main.js",
+  "main": "main.js",
   "files": [
     "index.js",
     "main.js",
@@ -79,5 +79,5 @@
     "most": "1.7.2"
   },
   "module": "index.js",
-  "browser": "transpiled/browser.js"
+  "browser": "browser.js"
 }
