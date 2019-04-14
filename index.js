@@ -4,13 +4,13 @@ import fresh from "@unction/fresh";
 import attach from "@unction/attach";
 import type from "@unction/type";
 import isType from "@unction/istype";
-import { join } from "most";
-export default function flatten(functor) {
+import {join} from "most";
+export default function flatten (functor) {
   if (isType("Stream")(functor)) {
     return join(functor);
   }
 
-  return reduceWithValueKey(accumulated => value => key => {
+  return reduceWithValueKey((accumulated) => (value) => (key) => {
     if (isType(type(functor))(value)) {
       return mergeRight(accumulated)(value);
     }

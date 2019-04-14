@@ -1,27 +1,27 @@
 /* eslint-disable flowtype/require-return-type */
-import {test} from "tap"
-import {from} from "most"
-import streamSatisfies from "@unction/streamsatisfies"
+import {test} from "tap";
+import {from} from "most";
+import streamSatisfies from "@unction/streamsatisfies";
 
-import flatten from "./index"
+import flatten from "./index";
 
 test("Array, two dimensons", ({same, end}) => {
   same(
     flatten([["a", "b"], ["c", "d"]]),
     ["a", "b", "c", "d"]
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test("Array, mixed dimensons", ({same, end}) => {
   same(
     flatten(["a", "b", ["c", "d"]]),
     ["a", "b", "c", "d"]
-  )
+  );
 
-  end()
-})
+  end();
+});
 
 test("Stream", ({equal, doesNotThrow, end}) => {
   streamSatisfies([
@@ -35,9 +35,9 @@ test("Stream", ({equal, doesNotThrow, end}) => {
     doesNotThrow
   )(
     ({length}) => (size) => {
-      equal(length, size)
+      equal(length, size);
 
-      end()
+      end();
     }
   )(
     flatten(
@@ -46,5 +46,5 @@ test("Stream", ({equal, doesNotThrow, end}) => {
         from(["c", "d"]),
       ])
     )
-  )
-})
+  );
+});
