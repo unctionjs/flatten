@@ -1,6 +1,6 @@
 {
   "name": "@unction/flatten",
-  "version": "10.3.0",
+  "version": "10.4.0",
   "description": "Takes a multi-dimensional functor and decreases the nesting by one",
   "keywords": [
     "unction",
