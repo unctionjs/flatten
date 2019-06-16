@@ -76,7 +76,6 @@
     "@unction/reducevalues": "8.5.0",
     "@unction/reducewithvaluekey": "11.5.0",
     "@unction/type": "4.2.0",
-    "core-js": "3.0.1",
     "most": "1.7.2"
   },
   "module": "module.js",
