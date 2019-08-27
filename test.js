@@ -1,9 +1,9 @@
-/* eslint-disable flowtype/require-return-type */
+
 import {test} from "tap";
 import {from} from "most";
 import streamSatisfies from "@unction/streamsatisfies";
 
-import flatten from "./index";
+import flatten from "./";
 
 test("Array, two dimensons", ({same, end}) => {
   same(
