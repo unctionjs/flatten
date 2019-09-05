@@ -19,7 +19,7 @@
   "bugs": "https://github.com/unctionjs/flatten/issues",
   "main": "main.js",
   "files": [
-    "index.js",
+    "index.ts",
     "main.js",
     "main.js.map",
     "browser.js",
@@ -81,5 +81,6 @@
     "most": "1.7.2"
   },
   "module": "module.js",
-  "browser": "browser.js"
+  "browser": "browser.js",
+  "types": "types.d.ts"
 }

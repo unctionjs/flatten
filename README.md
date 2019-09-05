@@ -4,9 +4,9 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> FunctorType => FunctorType
+> EnumerableType<EnumerableType<A> | A> => EnumerableType<A>
 
-Takes a multi-dimensional functor and decreases the nesting by one.
+Takes a multi-dimensional enumerable and decreases the nesting by one.
 
 ``` javascript
 import {from} from "most"

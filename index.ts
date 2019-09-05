@@ -5,16 +5,19 @@ import attach from "@unction/attach";
 import type from "@unction/type";
 import isType from "@unction/istype";
 import {join} from "most";
-export default function flatten (functor) {
-  if (isType("Stream")(functor)) {
-    return join(functor);
+
+import {EnumerableType} from "./types";
+
+export default function flatten<A> (enumerable: EnumerableType<EnumerableType<A> | A>): EnumerableType<A> {
+  if (isType("Stream")(enumerable)) {
+    return join(enumerable);
   }
 
-  return reduceWithValueKey((accumulated) => (value) => (key) => {
-    if (isType(type(functor))(value)) {
+  return reduceWithValueKey((accumulated: EnumerableType<A>) => (value: A) => (key: unknown) => {
+    if (isType(type(enumerable))(value)) {
       return mergeRight(accumulated)(value);
     }
 
     return attach(key)(value)(accumulated);
-  })(fresh(functor))(functor);
+  })(fresh(enumerable))(enumerable);
 }
