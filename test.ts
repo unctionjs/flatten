@@ -2,7 +2,7 @@
 import {from} from "most";
 import streamSatisfies from "@unction/streamsatisfies";
 
-import flatten from "./index.ts";
+import flatten from "./index";
 
 test("Array, two dimensons", () => {
   expect(flatten([["a", "b"], ["c", "d"]])).toEqual(["a", "b", "c", "d"]);
