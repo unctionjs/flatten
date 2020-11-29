@@ -6,14 +6,12 @@ import type from "@unction/type";
 import isType from "@unction/istype";
 import {join} from "most";
 
-import {EnumerableType} from "./types";
-
-export default function flatten<A> (enumerable: EnumerableType<EnumerableType<A> | A>): EnumerableType<A> {
+export default function flatten<A> (enumerable: EnumerableType<Array<A> | Set<A> | RecordType<unknown, A> | string | A>): Array<A> | Set<A> | RecordType<unknown, A> | string {
   if (isType("Stream")(enumerable)) {
     return join(enumerable);
   }
 
-  return reduceWithValueKey((accumulated: EnumerableType<A>) => (value: A) => (key: unknown) => {
+  return reduceWithValueKey((accumulated: Array<A> | Set<A> | RecordType<unknown, A> | string) => (value: A) => (key: unknown) => {
     if (isType(type(enumerable))(value)) {
       return mergeRight(accumulated)(value);
     }

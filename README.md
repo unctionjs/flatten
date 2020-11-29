@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> EnumerableType<EnumerableType<A> | A> => EnumerableType<A>
+> EnumerableType<Array<A> | Set<A> | RecordType<unknown, A> | string | A> => Array<A> | Set<A> | RecordType<unknown, A> | string
 
 Takes a multi-dimensional enumerable and decreases the nesting by one.
 
