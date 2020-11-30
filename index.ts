@@ -6,7 +6,7 @@ import type from "@unction/type";
 import isType from "@unction/istype";
 import {join} from "most";
 
-export default function flatten<A> (enumerable: EnumerableType<Array<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string | A>): Array<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string {
+export default function flatten<A> (enumerable: ListType<Array<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string | A> | RecordType<unknown, Array<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string | A> | string): Array<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string {
   if (isType("Stream")(enumerable)) {
     return join(enumerable);
   }

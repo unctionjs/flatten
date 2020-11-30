@@ -4,7 +4,7 @@
 ![Stability][BADGE_STABILITY]
 ![Dependencies][BADGE_DEPENDENCY]
 
-> EnumerableType<Array<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string | A> => Array<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string
+> ListType<Array<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string | A> | RecordType<unknown, Array<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string | A> | string => Array<A> | Set<A> | Record<string | number | symbol, B> | Map<B, A> | string
 
 Takes a multi-dimensional enumerable and decreases the nesting by one.
 
